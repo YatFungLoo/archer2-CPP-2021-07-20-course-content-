@@ -7,14 +7,16 @@ public:
   // Default value is zero
   Complex() = default;
   // Construct purely real complex
+  Complex(double re);
   // Construct from real and imaginary parts
+  Complex(double re, double im); 
 
   // Access components
   double real() const;
   double imag() const;
 
   // Compute the complex conjugate
-  Complex conj();
+  Complex conj() const;
 
   // Compute the magnitude and squared magnitude
   double norm() const;
